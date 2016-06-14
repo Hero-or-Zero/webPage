@@ -1,0 +1,800 @@
+body,a,input,p,ul,li{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	border:0;
+	font-family: "微软雅黑";
+}
+a{
+	color:#4d5a6a;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0px;
+    padding:0px;
+    border:none;
+    list-style:none;
+}
+#Panel{
+	margin:0 auto;
+}
+#header{
+	height:56px;
+	background-color:#2289bf;
+}
+#main{
+	width:1280px;
+	margin:0 auto;
+}
+/*解决子元素全部浮动父元素高度为0的问题*/
+#main:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+#main .mainLeft{
+	width:260px;
+	/*高度与mainRight等高即可*/
+	height:1202px;
+	background-color:#2c3040;
+	float:left
+}
+#main .mainRight{
+	width:1020px;
+	/*height:500px;/*后面要去掉*/
+	background-color:#eee;
+	float:left;
+}
+/***************header******************************/
+#header .logo{
+	float:left;
+	margin-top:10px;
+	margin-left:100px;
+}
+#header .search{
+	float:right;
+	margin-right:100px;
+}
+#header .search .searchTxt,#header .search .searchUser{
+	float:left;
+}
+#header .search .searchTxt{
+	width:312px;
+	height:26px;
+	background-color:#fff;
+	border-radius:15px;
+	margin-top:15px;
+	position: relative;
+}
+#header .search .searchTxt input{
+	display:inline-block;
+	width:280px;
+	height:26px;
+	border-radius:15px;
+	position: absolute;
+	/*如何去掉input框点击之后的默认边框？？？*/
+}
+#header .search .searchTxt img{
+	margin-left:15px;
+}
+#header .search .searchUser{
+	margin-top:4px;
+	color:#fff;
+	font-weight:bold;
+	margin-left:20px;
+}
+#header .search .searchUser p{
+	display:inline-block;
+	margin-top:15px;
+}
+#header .search .searchUser p a{
+	color:#fff;
+}
+/******************mainLeft*************************/
+#main .mainLeft .circular:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+#main .mainLeft .circular .cir{
+	width:50px;
+	height:50px;
+	border-radius:27px;
+	border:2px solid #b9babe;
+	float:left;
+	margin:20px 20px 20px 50px;
+}
+#main .mainLeft .circular .cir .fillCir{
+	width:46px;
+	height:46px;
+	background-color:#b9babe;
+	margin-left:2px;
+	margin-top:2px;
+	border-radius:23px;
+}
+#main .mainLeft .circular p{
+	color:#fff;
+	font-weight:bold;
+	float:left;
+	line-height:94px;
+}
+#main .mainLeft .collect{
+	height:40px;
+	color:#4d5a6a;
+	font-weight: bold;
+	font-size:14px;
+}
+#main .mainLeft .collect .c1,#main .mainLeft .collect .c2{
+	float:left;
+}
+#main .mainLeft .collect .c1{
+	margin-left:70px;
+	margin-right:20px;
+	border-right:1px solid #4d5a6a;
+	padding-right:20px;
+	height:40px;
+	text-align: center;
+}
+#main .mainLeft .collect .c2{
+	text-align: center;
+}
+/*************mainLeft下拉列表******************************/
+#main .mainLeft .bigUl{
+	color:#4d5a6a;
+	font-size:14px;
+	position: relative;
+	z-index: 1;
+}
+#main .mainLeft .bigUl li span{
+	display:inline-block;
+	width:12px;
+	height:11px;
+}
+#main .mainLeft .bigUl .l1,#main .mainLeft .bigUl .l2,#main .mainLeft .bigUl .l3,#main .mainLeft .bigUl .l4,#main .mainLeft .bigUl .l5,#main .mainLeft .bigUl .l6{
+	margin-left:50px;
+	margin-top:30px;
+}
+#main .mainLeft .bigUl .l1 span{
+	background-image:url("Images/task_1_9_1_18.png");
+}
+#main .mainLeft .bigUl .l2 span{
+	background-image:url("Images/task_1_9_1_36.png");
+}
+#main .mainLeft .bigUl .l3 span{
+	background-image:url("Images/task_1_9_1_38.png");
+}
+#main .mainLeft .bigUl .l4 span{
+	background-image:url("Images/task_1_9_1_36.png");
+}
+#main .mainLeft .bigUl .l5 span{
+	background-image:url("Images/task_1_9_1_36.png");
+}
+#main .mainLeft .bigUl .l6 span{
+	background-image:url("Images/task_1_9_1_44.png");
+}
+#main .mainLeft .bigUl .smallUl1{
+	display:block;
+	position:relative;
+}
+#main .mainLeft .bigUl .smallUl1 .sl1,#main .mainLeft .bigUl .smallUl1 .sl2,#main .mainLeft .bigUl .smallUl1 .sl3{
+	margin-top:10px;
+	margin-left:80px;
+}
+#main .mainLeft .bigUl .smallUl1 .sl1{
+	background:url("Images/task_1_9_1_23.png") no-repeat;
+	line-height:12px;
+}
+#main .mainLeft .bigUl .smallUl1 .sl2{
+	background:url("Images/task_1_9_1_26.png") no-repeat;
+	line-height:12px;
+	color:#fff;
+}
+#main .mainLeft .bigUl .smallUl1 .sl3{
+	background:url("Images/task_1_9_1_23.png") no-repeat;
+	line-height:12px;
+}
+#main .mainLeft .bigUl .smallUl1 b{/*用定位做向前面的>*/
+	position:absolute;
+	left:65px;
+}
+#main .mainLeft .bigUl .smallUl1 .b1{
+	top:-5px;
+}
+#main .mainLeft .bigUl .smallUl1 .b2{
+	top:17px;
+	color:#fff;
+}
+#main .mainLeft .bigUl .smallUl1 .b3{
+	top:87px;
+}
+#main .mainLeft .bigUl .smallUl1 .ssUl1{
+	margin-left:90px;
+}
+#main .mainLeft .bigUl .smallUl1 .ssUl1 li{
+	margin-top:10px;
+}
+#main .mainLeft .bigUl .smallUl1 .ssUl1 .ssl1{
+	background:url("Images/task_1_9_1_29.png") no-repeat;
+	line-height:14px;
+
+}
+#main .mainLeft .bigUl .smallUl1 .ssUl1 .ssl2{
+	background:url("Images/task_1_9_1_32.png") no-repeat;
+	line-height:14px;
+}
+#main .mainLeft .bigUl .l1 a,#main .mainLeft .bigUl .smallUl1 .sl2 a,#main .mainLeft .bigUl .smallUl1 .ssUl1 .ssl1 a{
+	color:#fff;
+}
+/********mainLeft左侧的#383e4e的部分用一个遮罩层*************/
+#ceng{
+	position: absolute;
+	width:260px;
+	height:160px;
+	background-color:#383e4e;
+	z-index: -1;
+	top:-10px;
+}
+/****************mainRight**********************************/
+#main .mainRight .top{
+	height:30px;
+	background-color:#fff;
+}
+#main .mainRight .top ul{
+	margin-left:20px;
+}
+#main .mainRight .top ul li{
+	float:left;
+	line-height:30px;
+	color:#b6b6b6;
+}
+#main .mainRight .top ul li span{
+	display: inline-block;
+	margin-left:10px;
+	margin-right:10px;
+}
+#main .mainRight .top ul li:last-child{
+	color:#6699c4;
+}
+/*******************.mainRight .content*********************/
+#main .mainRight .content .select:after{
+	display: table;
+	content:'';
+	clear:both;
+}
+#main .mainRight .content .select{
+	width:900px;
+	height:90px;
+	background-color:#fff;
+	margin-left:60px;
+	margin-top:20px;
+	color:#b6b6b6;
+}
+#main .mainRight .content .select>div{
+	float:left;
+	margin-top:15px;
+}
+#main .mainRight .content .select .s4 a{
+	display: block;
+	color:#fff;
+	font-size: 14px;
+	text-align: center;
+	width:60px;
+	height:30px;
+	border-radius: 3px;
+	background-color:#388ac2;
+	line-height:30px;
+}
+#main .mainRight .content .select .s1{
+	margin-left:40px;
+	margin-right:20px;
+}
+#main .mainRight .content .select .s2,#main .mainRight .content .select .s3{
+	margin-left:20px;
+	margin-right:20px;
+}
+#main .mainRight .content .select .s4{
+	margin-left:20px;
+	margin-top:30px;
+}
+#main .mainRight .content .select .s2 .sell{
+	margin-top:10px;
+}
+#main .mainRight .content .select .s3 .number{
+	margin-top:10px;
+}
+#main .mainRight .content .select .s3 .date input{
+	width:80px;
+	border:1px solid #b6b6b6;
+	border-radius: 1px;
+}
+#main .mainRight .content .select .s3 .number .successItem{
+	width:76px;
+}
+#main .mainRight .content select{
+	border-color:#b6b6b6;
+}
+/************************.content .hisory******************************/
+#main .mainRight .content .history ul{
+	display:table;
+	content:'';
+	clear:both;
+	width:900px;
+	margin:0 auto;
+	margin-top:10px;
+	background-color:#eee;
+	margin-bottom:20px;
+	box-sizing:border-box;
+}
+#main .mainRight .content .history ul li{
+	float:left;
+	height:70px;
+	border-top:1px solid #cacdd0;
+	border-left:1px solid #cacdd0;
+	border-right:1px solid transparent;
+	border-bottom:1px solid transparent;
+	text-align:center;
+	background-color:#fff;
+}
+#main .mainRight .content .history ul .liData{
+	width:110px;
+	margin-left:4px;
+	line-height:32px;
+}
+#main .mainRight .content .history ul .liData p{
+	font-size:16px;
+}
+#main .mainRight .content .history ul .liData span{
+	color:#ed7327;
+	font-size:22px;
+	font-weight:bold;
+}
+#main .mainRight .content .history ul .liData span b{
+	color:#ccc;
+	font-size:16px;
+}
+#main .mainRight .content .history ul .arrow{
+	width:30px;
+	line-height:70px;
+	font-weight:bold;
+	color:#ccc;
+}
+#main .mainRight .content .history ul .lastArrow{
+	margin-left:4px;
+	margin-right:4px;
+}
+#main .mainRight .content .history ul li:last-child{
+	width:130px;
+	line-height:72px;
+}	
+#main .mainRight .content .history ul li .lastSpan{
+	display:inline-block;
+	width:31px;
+	height:31px;
+	background:url("Images/task_1_9_1_15.png");
+	position:relative;
+	top:8px;
+	left:-5px;
+}
+#main .mainRight .content .history ul .firstData{/*设置第一个数据上面的上边框颜色*/
+	border-top:4px solid #4688c8;
+	height:67px;
+	line-height:31px;
+}
+/********************.content .time***********************************/
+#main .mainRight .content .time{
+	margin:0 auto;
+	width:900px;
+	margin-bottom:20px;
+}
+#main .mainRight .content .time .timeData:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+#main .mainRight .content .time .word{
+	margin-bottom:5px;
+	font-size:14px;
+}
+#main .mainRight .content .time .timeData{
+	
+}
+#main .mainRight .content .time .timeData .timeDataNum{
+	float:left;
+	width:199px;
+	height:88px;
+	background-color:#fff;
+	border:1px solid #cacdd0;
+	border-left:1px solid #46b29d;
+	margin-right:28px;
+}
+#main .mainRight .content .time .timeData .lastTimeDataNum{
+	margin-right:0px;
+	border-left-color:#e2cd49;
+}
+#main .mainRight .content .time .timeData .secondTimeDataNum{
+	border-left-color:#3b8ac1;
+}
+#main .mainRight .content .time .timeData .thirdTimeDataNum{
+	border-left-color:#cf4c39;
+}
+#main .mainRight .content .time .timeData .color{
+	display:inline-block;
+	float:left;
+	width:3px;
+	height:90px;
+}
+#main .mainRight .content .time .timeData .color1{
+	background-color:#46b29d;
+}
+#main .mainRight .content .time .timeData .color2{
+	background-color:#3b8ac1;
+}
+#main .mainRight .content .time .timeData .color3{
+	background-color:#cf4c39;
+}
+#main .mainRight .content .time .timeData .color4{
+	background-color:#e2cd49;
+}
+#main .mainRight .content .time .timeData .timeDataNum div{
+	width:60px;
+	height:50px;
+	background-color:#46b29d;
+	float:right;
+	margin-right:20px;
+	margin-top:19px;
+}
+#main .mainRight .content .time .timeData .timeDataNum p{
+	float:left;
+	margin-top:24px;
+	margin-left:10px;
+	font-size:13px;
+}
+#main .mainRight .content .time .timeData .timeDataNum p span{
+	color:#b8b8b8;
+}
+/*******设置里面小矩形的颜色*********/
+#main .mainRight .content .time .timeData .secondTimeDataNum div{
+	background-color:#3b8ac1;
+}
+#main .mainRight .content .time .timeData .thirdTimeDataNum div{
+	background-color:#cf4c39;
+}
+#main .mainRight .content .time .timeData .lastTimeDataNum div{
+	background-color:#e2cd49;
+}
+/********************.content .item*******************************/
+#main .mainRight .content .item{
+	width:900px;
+	margin:0 auto;
+}
+#main .mainRight .content .item:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+#main .mainRight .content .item .item1{
+	height:356px;
+	width:530px;
+	border:1px solid #cacdd0;
+	background-color:#fff;
+	border-radius:5px;
+	float:left;
+}
+#main .mainRight .content .item .item1 .item1Header,#main .mainRight .content .item .item2 .item2Header,#main .mainRight .content .data .cale .caleHeader,#main .mainRight .content .data .car .carHeader{
+	/*此处因为item1与item2,caleHeader,carHeader的样式基本相同，所以利用群组选择器都定义在这里*/
+	height:40px;
+	background-color:#f4f5f6;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	line-height:40px;
+	font-size:14px;
+	color:#aaa;
+}
+#main .mainRight .content .item .item1 .item1Header p,#main .mainRight .content .item .item2 .item2Header p,#main .mainRight .content .data .cale .caleHeader p,#main .mainRight .content .data .car .carHeader p{
+	margin-left:20px;
+}
+#main .mainRight .content .item .item1 .tabs:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+#main .mainRight .content .item .item1 .tabs{
+	width:472px;
+	margin:0 auto;
+	margin-top:15px;
+}
+#main .mainRight .content .item .item1 .tabs li{
+	float:left;
+	width:80px;
+	height:30px;
+	background-color:#ededf0;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	text-align:center;
+	line-height:30px;
+	border-bottom:1px solid #cacdd0;
+}
+#main .mainRight .content .item .item1 .tabs .blank{
+	height:30px;
+	width:7px;
+	background-color:#fff;
+	border-radius:0px;
+}
+#main .mainRight .content .item .item1 .tabs .lastBlank{
+	width:44px;
+	margin-right:0px;
+}
+#main .mainRight .content .item .item1 .details{
+	width:470px;
+	height:250px;
+	border-left:1px solid #cacdd0;
+	border-bottom:1px solid #cacdd0;
+	border-right:1px solid #cacdd0;
+	margin:0 auto;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+#main .mainRight .content .item .item1 .tabs .tab1{
+	width:78px;
+	height:29px;
+	border:1px solid #cacdd0;
+	border-bottom-color:transparent;
+	background-color:#fff;
+}
+#main .mainRight .content .item .item1 .details table tr td{
+	border:1px solid #cacdd0;
+	font-size:14px;
+	height:30px;
+	text-align:left;
+	line-height:30px;
+	width:100px;
+}
+#main .mainRight .content .item .item1 .details:before{
+	display:table;
+	content:'';
+	clear:both;
+}
+#main .mainRight .content .item .item1 .details table{
+	border-collapse:collapse;
+	margin-left:30px;
+	margin-top:26px;
+}
+/*******.item2(item2Header的样式与item1Header样式相同，定义在了上面)******/
+#main .mainRight .content .item .item2{
+	width:356px;
+	height:356px;
+	border:1px solid #cacdd0;
+	float:left;
+	background-color:#fff;
+	margin-left:10px;
+	border-radius:5px;
+}
+#main .mainRight .content .item .item2 .topic{
+	margin-left:50px;
+	margin-top:15px;
+}
+#main .mainRight .content .item .item2 .topic p{
+	color:#cacdd0;
+}
+#main .mainRight .content .item .item2 .money:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+#main .mainRight .content .item .item2 .money{
+	margin-top:10px;
+	border-top:1px solid #cacdd0;
+	border-bottom:1px solid #cacdd0;
+	margin-left:35px;
+	width:270px;
+	height:50px;
+}
+#main .mainRight .content .item .item2 .money .m1,#main .mainRight .content .item .item2 .money .m2{
+	float:left;
+}
+#main .mainRight .content .item .item2 .money .m1 p,#main .mainRight .content .item .item2 .money .m2 p,#main .mainRight .content .item .item2 .describe p{
+	color:#cacdd0;
+}
+#main .mainRight .content .item .item2 .money .m1 p,#main .mainRight .content .item .item2 .money .m1 span,#main .mainRight .content .item .item2 .money .m2 p,#main .mainRight .content .item .item2 .money .m2 span,#main .mainRight .content .item .item2 .describe p,#main .mainRight .content .item .item2 .describe span{
+	margin-left:15px;
+}
+#main .mainRight .content .item .item2 .money .m1{
+	height:50px;
+	border-right:1px solid #cacdd0;
+	width:120px;
+}
+#main .mainRight .content .item .item2 .money .m1 p,#main .mainRight .content .item .item2 .money .m2 p{
+	margin-top:4px;
+}
+#main .mainRight .content .item .item2 .describe{
+	width:270px;
+	height:130px;
+	margin-top:5px;
+	border-bottom:1px solid #cacdd0;
+	margin-left:35px;
+}
+#main .mainRight .content .item .item2 .checkbox{
+	margin-top:8px;
+	width:270px;
+	margin-left:35px;
+	color:#cacdd0;
+}
+#main .mainRight .content .item .item2 .checkbox input{
+	margin-top:5px;
+}
+#main .mainRight .content .item .item2 .checkbox a{
+	display: inline-block;
+	color:#fff;
+	font-size: 14px;
+	text-align: center;
+	width:60px;
+	height:30px;
+	border-radius: 3px;
+	background-color:#388ac2;
+	line-height:30px;
+	float:right;
+}
+/********************.content .data*********************************/
+#main .mainRight .content .data{
+	width:900px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:100px;
+}
+#main .mainRight .content .data:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+#main .mainRight .content .data .cale{
+	width:356px;
+	height:356px;
+	border:1px solid #cacdd0;
+	float:left;
+	background-color:#fff;
+	border-radius:5px;
+}
+#main .mainRight .content .data .cale .ymd{
+	width:300px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#main .mainRight .content .data .cale .ymd select{
+	margin-right:10px;
+}
+#main .mainRight .content .data .cale .ymd span{
+	display:inline-block;
+	border:1px solid #cacdd0;
+	font-size:12px;
+	color:black;
+}
+#main .mainRight .content .data .cale .week ul:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+#main .mainRight .content .data .cale .week{
+	width:300px;
+	height:30px;
+	margin:0 auto;
+	border-top:1px solid #a9cfec;
+	border-bottom:1px solid #cacdd0;
+	line-height:30px;
+}
+#main .mainRight .content .data .cale .week ul li{
+	float:left;
+	margin-left:13px;
+	margin-right:13px;
+}
+#main .mainRight .content .data .cale table{
+	width:300px;
+	margin:0 auto;
+	margin-left:26px;
+	font-size:12px;
+}
+#main .mainRight .content .data .cale table tr .colour{
+	color:red;
+}
+#main .mainRight .content .data .cale table tr td{
+	width:40px;
+	height:40px;
+	text-align:center;
+}
+#main .mainRight .content .data .cale table tr .yellow{
+	width:38px;
+	height:38px;
+	border:1px solid #f7d157;
+}
+/*********************car**************/
+#main .mainRight .content .data .car{
+	height:356px;
+	width:530px;
+	border:1px solid #cacdd0;
+	background-color:#fff;
+	border-radius:5px;
+	float:left;
+	margin-left:10px;
+}
+/*因为Header部分样式都是一样的，所以都定义在了上面*/
+#main .mainRight .content .data .car table{
+	border-collapse:collapse;
+	margin-left:61px;
+	margin-top:21px;
+	font-size:14px;
+}
+#main .mainRight .content .data .car table .head{
+	font-weight:bold;
+}
+#main .mainRight .content .data .car table tr td{
+	border:1px solid #cacdd0;
+	height:22px;
+	text-align:center;
+	line-height:22px;
+}
+/*设置第一列宽度*/
+#main .mainRight .content .data .car table tr .d1{
+	width:50px;
+}
+/*设置第二列宽度*/
+#main .mainRight .content .data .car table tr .d2{
+	width:70px;
+}
+/*设置第三列宽度*/
+#main .mainRight .content .data .car table tr .d3{
+	width:280px;
+	text-align:left;
+}
+#main .mainRight .content .data .car table tr .d3 .meter{
+	margin-left:5px;
+	height:4px;
+	width:160px;
+	background-color:#dcdcdc;
+	float:right;
+	margin-top:9px;
+	margin-right:8px;
+	position:relative;
+}
+#main .mainRight .content .data .car table tr .d3 .meter span{
+	display:inline-block;
+	height:4px;
+	width:140px;
+	background-color:#dc6d52;
+	position:absolute;
+}
+#main .mainRight .content .data .car table tr .d3 .m2 span{
+	width:120px;
+	background-color:#ef8051;
+}
+#main .mainRight .content .data .car table tr .d3 .m3 span{
+	width:100px;
+	background-color:#f29f51;
+}
+#main .mainRight .content .data .car table tr .d3 .m4 span{
+	width:90px;
+	background-color:#7fcbf0;
+}
+#main .mainRight .content .data .car table tr .d3 .m5 span{
+	width:70px;
+	background-color:#7fcbf0;
+}
+#main .mainRight .content .data .car table tr .d3 .m6 span{
+	width:60px;
+	background-color:#7fcbf0;
+}
+#main .mainRight .content .data .car table tr .d3 .m7 span{
+	width:45px;
+	background-color:#7fcbf0;
+}
+#main .mainRight .content .data .car table tr .d3 .m8 span{
+	width:30px;
+	background-color:#7fcbf0;
+}
+#main .mainRight .content .data .car table tr .d3 .m9 span{
+	width:20px;
+	background-color:#7fcbf0;
+}
+#main .mainRight .content .data .car table tr .d3 .m10 span{
+	width:10px;
+	color:#7fcbf0;
+	background-color:#7fcbf0;
+}
