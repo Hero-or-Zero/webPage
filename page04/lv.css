@@ -1,0 +1,248 @@
+/********通用******************/
+body {
+    margin:0px;
+    padding:0px;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,i{
+    margin:0px;
+    padding:0px;
+    border:none;
+    list-style:none;
+}
+/*********travel********************/
+#Panel{
+  background:url("Images/land_12.png") repeat;
+}
+#Panel:before {/*解决子元素margin-top越界问题*/
+content:"";
+display:table;
+}
+#travel{
+  background-color:#fff;
+  width:980px;
+  margin:20px auto;
+}
+#logo a{
+  display:block;
+  float:left;
+  margin-left:20px;
+}
+#logo span{
+  display:block;
+}
+#logo ul,#logo span,#logo ul li{
+  float:left;
+}
+#logo{
+  height:90px;
+  width:980px;
+  margin:0 auto;
+}
+#logo ul{
+  margin-left:100px;
+  margin-top:30px;
+}
+#logo ul li{
+  height:30px;
+  line-height:30px;
+  width:80px;
+  text-align:center;
+}
+#logo ul span{
+  height:30px;
+  line-height:30px;
+  color:#ccc;
+}
+#logo ul .chicked{
+  background-color:#ff5900;
+}
+/*********bigImg********************/
+#bigImg{
+  height:408px;
+  background:url("Images/land_05.png") no-repeat;
+  margin-left:20px;
+}
+/***********content************************/
+#content{
+  clear:both;
+}
+#content .left{
+  width:200px;
+  height:800px;
+  float:left;
+  clear:both;
+  margin-left:20px;
+  color:#aaa;
+  font-size:16px;
+  margin-top:15px;
+}
+#content .left .pan{
+  width:200px;
+  height:500px;
+  border-right:1px solid #ccc;
+}
+#content .left .panB{
+  width:200px;
+  height:300px;
+}
+#content .right{
+  float:left;
+}
+#content .left .alnum,#content .left .search{
+  width:180px;
+  height:40px;
+  border-bottom:1px solid #ccc;
+  line-height:40px;
+  text-align:left;
+}
+#content .left .tri ul{
+  margin-top:20px;
+  width:180px;
+}
+#content .left .tri ul li{
+  font-size:13px;
+  height:20px;
+  line-height:20px;
+  margin-bottom:5px;
+  text-align:center;
+  position:relative;
+
+}
+#content .left .tri ul li span{
+  display:block;
+  float:left;
+  border:5px solid transparent;
+  border-left-color:red;
+  position:absolute;
+  top:4px;
+  left:50px;
+}
+#content .left .sort{
+  width:180px;
+  margin-top:20px;
+}
+#content .left .sort select{
+  width:124px;
+  margin-bottom:5px;
+}
+#content .left .sort .txt{
+  width:120px;
+  margin-bottom:5px;
+}
+#content .left .sort .btn{
+  display:block;
+  color:black;
+  font-size:14px;
+}
+#content .right{
+  width:720px;
+  height:500px;
+  float:left;
+  margin-top:20px;
+  margin-left:20px;
+}
+#content .right .address{
+  width:720px;
+  height:35px;
+  border-bottom:1px solid #ccc;
+}
+#content .right .address p,#content .right .address span{
+  display:block;
+  float:left;
+}
+#content .right .address span{
+  line-height:30px;
+  font-size:14px;
+}
+#content .right .address p{
+  font-size:12px;
+  margin-top:8px;
+}
+#content .right .address b{
+  margin-left:5px;
+  margin-right:5px;
+}
+#content .right .photo{
+  width:720px;
+  height:700px;
+  border-top:1px solid #ccc;
+  margin-top:3px;
+}
+#content .right .photo ul{
+  margin-top:30px;
+}
+#content .right .photo ul li{
+  float:left;
+  margin-right:30px;
+  margin-bottom:20px;
+  text-align:center;
+  line-height:20px;
+  color:#aaa;
+  font-size:14px;
+}
+#content .right .page{
+  width:720px;
+  height:100px;
+  font-size:14px;
+}
+#content .right .page p{
+  display:block;
+  float:left;
+  margin-right:200px;
+}
+#content .right .page span{
+  background-color:#dcd9d4;
+  display:block;
+  float:left;
+  width:50px;
+  height:19px;
+  text-align:center;
+  margin-right:5px;
+}
+#content .right .page b,#content .right .page select{
+  display:block;
+  float:left;
+  text-align:center;
+}
+#content .right .page b{
+  width:15px;
+  height:19px;
+  background-color:#dcd9d4;
+  margin-right:5px;
+}
+#content .right .page select{
+  margin-right:5px;
+}
+
+/**********footer*************************/
+#footer{
+  width:980px;
+  height:50px;
+  margin:0 auto;
+  background-color:#454545;
+  color:#fff;
+  font-size:12px;
+  float:left;
+}
+#footer ul,#footer ul li{
+  float:left;
+}
+#footer ul{
+  margin-left:40px;
+  line-height:50px;
+}
+#footer ul li{
+  margin-right:5px;
+}
+#footer p{
+  display:block;
+  float:right;
+  height:50px;
+  line-height:50px;
+  margin-right:40px;
+}
+#footer ul span{
+  display:block;
+  float:left;
+  margin-right:5px;
+}
